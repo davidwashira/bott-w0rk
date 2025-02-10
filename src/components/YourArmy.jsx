@@ -4,8 +4,8 @@ function YourArmy({ army, releaseBot, deleteBot }) {
     <div>
       <h2>Your Army</h2>
       <div className="bot-container">
-        {army.map((bot) => (
-          <BotCard key={bot.id} bot={bot} enlistBot={() => releaseBot(bot.id)} deleteBot={deleteBot} />
+        {army.map((bot)=> (
+          <BotCard key={bot.id} bot={bot} enlistBot={()=> releaseBot(bot.id)} deleteBot={deleteBot} />
         ))}
       </div>
     </div>
