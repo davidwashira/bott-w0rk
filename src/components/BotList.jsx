@@ -4,7 +4,7 @@ import YourArmy from "../components/YourArmy";
 import BotService from "../services/BotService"
 
 function App() {
-  const [bots, setBots] = useState([]);
+  const [bots, setBots]= useState([]);
   const [army, setArmy] = useState([]);
 
   useEffect(() => {
